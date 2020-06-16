@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCS Selectors</title>
+    <style>
+      /* Element Selector*/
+      body {
+        background-color: black;
+      }
+      /* . is for classes, for general classes use class instead id  */
+      .primary-heading {
+        color: hotpink;
+      }
+      .secondary-heading {
+        color: green;
+      }
+      /*  # is for id */
+      #bangalore {
+        background-color: grey;
+      }
+      #kerala {
+        background-color: burlywood;
+      }
+      /* Multiple selectors, using comma separated we can use */
+      #kerala,
+      #bangalore {
+        border: 1px solid red;
+        padding: 10px;
+        margin-bottom: 25px;
+      }
+      /* Nested Selectors, note we don't use comma bz we want to go inside that particular ID cand change that P only*/
+      #kerala p {
+        font-size: 20px; /*16px is the default*/
+      }
+      #bangalore p {
+        font-size: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bangalore">
+      <h2 class="primary-heading">Bangalore</h2>
+      <p>
+        Bengaluru (also called Bangalore) is the capital of India's southern
+        Karnataka state. The center of India's high-tech industry, the city is
+        also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha
+        is a Neo-Dravidian legislative building. Former royal residences include
+        19th-century Bangalore Palace, modeled after England’s Windsor Castle,
+        and Tipu Sultan’s Summer Palace, an 18th-century teak structure.
+      </p>
+    </div>
+    <div id="kerala">
+      <h2 class="secondary-heading">Gods own Country Kerala</h2>
+      <p>
+        Kerala, a state on India's tropical Malabar Coast, has nearly 600km of
+        Arabian Sea shoreline. It's known for its palm-lined beaches and
+        backwaters, a network of canals. Inland are the Western Ghats, mountains
+        whose slopes support tea, coffee and spice plantations as well as
+        wildlife. National parks like Eravikulam and Periyar, plus Wayanad and
+        other sanctuaries, are home to elephants, langur monkeys and tigers.
+      </p>
+    </div>
+  </body>
+</html>
