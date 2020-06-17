@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model / Padding & Styling</title>
+    <style>
+      /* CSS Reset, overriding the default */
+      * {
+        margin: 0; /*Margin always means outside*/
+        padding: 0; /*Padding always means inside*/
+        box-sizing: border-box; /* Without it always size will be width +padding*/
+      }
+      .heroes h3 {
+        padding-bottom: 10px;
+        color: red;
+      }
+
+      .heroes {
+        background: #f4f4ff;
+        border: 2px grey solid;
+        width: 500px;
+
+        /* Padding on all sides */
+        padding: 10px;
+        /* Always down will over ride the upper */
+        /* Padding per side */
+        padding-top: 120px;
+        padding-right: 120px;
+        padding-bottom: 120px;
+        padding-left: 120px;
+        /* Padding shorthand : Top Right Bottom Left */
+        padding: 50px 120px 50px 120px;
+        /* Padding shorthand : Top/Bottom Right/Left */
+        padding: 110px 120px;
+
+        /* Margin on all sides */
+        margin: 10px;
+        /* Always down will over ride the upper */
+        /* Margin per side */
+        margin-top: 120px;
+        margin-right: 120px;
+        margin-bottom: 120px;
+        margin-left: 120px;
+        /* Margin shorthand : Top Right Bottom Left */
+        margin: 50px 120px 50px 120px;
+        /* Margin shorthand : Top/Bottom Right/Left */
+        margin: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heroes">
+      <h3>
+        Shakthi Man
+      </h3>
+      <p>
+        Shaktimaan is an Indian Hindi-language superhero television show that
+        aired on DD 1 from 13 September 1997 to 27 March 2005. Producer Mukesh
+        Khanna played the role of Shaktimaan and his alter ego "Pandit Gangadhar
+        Vidhyadhar Mayadhar Omkarnath Shastri", a photographer for the newspaper
+        Aaj Ki Aawaz.
+      </p>
+    </div>
+    <div class="heroes">
+      <h3>
+        Cpatain Marvel
+      </h3>
+      <p>
+        Captain Marvel is a 2019 American superhero film based on the Marvel
+        Comics character Carol Danvers. Produced by Marvel Studios and
+        distributed by Walt Disney Studios Motion Pictures, it is the 21st film
+        in the Marvel Cinematic Universe (MCU).
+      </p>
+    </div>
+  </body>
+</html>
