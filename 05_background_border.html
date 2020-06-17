@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background & Borders</title>
+    <style>
+      p {
+        line-height: 1.6em;
+      }
+      div {
+        padding: 15px;
+      }
+      #box-1 {
+        background-color: blanchedalmond;
+        border-radius: 10px; /* before css3 it was not there*/
+        padding: 10px 10px 15px 15px;
+        /* border-width: 3px;
+        border-color: blue;
+        border-style: dotted;
+        below code is also doing the same */
+        border: 3px blue dotted;
+      }
+      #box-2 {
+        background: blueviolet;
+        color: #ffffff;
+        border-top: 3px red solid;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      #box-3 {
+        /* background-image: url(./img/keralaBackWater.jpg);
+        background-repeat: no-repeat;
+        background-position: -100px -100px; /* x axis and y axis, for up and down use negative, also can use center etc.
+        background-position: center top -100px;
+        same result with less line is showing below*/
+        background: url(./img/keralaBackWater.jpg) no-repeat center center/cover;
+        background-size: cover; /* it will cover the full space */
+        color: white;
+        height: 600px;
+        width: 300px;
+      }
+      #box-4 {
+        background: url("./img/leaf.png") no-repeat center center;
+        /* while you scroll image won't move */
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-1">
+      <h3>
+        Kerala -1
+      </h3>
+      <p>
+        The history of Kerala revolves around spice plantations. Ever since 300
+        BC, Kerala existed as the leading spice. This was the reason that
+        attracted various ancient civilizations to the state including
+        Egyptians, Assyrians and Babylonians. The spice plantations were ruled
+        by Phoenicians and Arabs during this time as per the records of
+        Sumerian.
+      </p>
+    </div>
+    <div id="box-2">
+      <h3>
+        Kerala -2
+      </h3>
+      <p>
+        Vasco De Gama's entry in India, in early 15th century, put Portuguese on
+        top of spice traders in Kerala. But later problems occurred between
+        Portuguese and Zamorin and caused conflicts. Portuguese aligned with
+        King of Kochi and built new fortresses at Malabar Coast. But, finally
+        they were defeated by Zamorin forces at Chaliyam fort. They were then
+        completely ousted by Dutch East India Company who then took over the
+        spice trade. Dutch then lost control at Battle of Colachel in 1741.
+      </p>
+    </div>
+    <div id="box-3">
+      <h3>
+        Kerala -3
+      </h3>
+      <p>
+        Despite constant attacks by Hyder Ali, the King of Mysore, in mid 18th
+        Century, British East India Company took over the entire state of
+        Kerala.
+      </p>
+      <p>
+        Kerala saw major rebellion movements in 20th century including the
+        famous 1921 Malabar Rebellion and 1946 Punnapra-Vayalar Uprising.
+      </p>
+    </div>
+    <div id="box-4">
+      <h3>
+        Kerala -4
+      </h3>
+      <p>
+        Kerala was formed after independence, on 1 November 1956, by the merging
+        of nearby Malayalam speaking districts. By next year, first Kerala
+        Legislative Assembly elections took place which put E. M. S.
+        Namboodiripad, a communist in power in Kerala.
+      </p>
+    </div>
+  </body>
+</html>
