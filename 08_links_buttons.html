@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links and buttons</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a {
+        columns: green;
+        text-decoration: none; /* To remove the underline */
+      }
+      /* Pseudo selector */
+      a:hover {
+        color: red;
+      }
+      a:active {
+        color: red;
+      }
+      /* a:visited {
+        color: red;
+      } */
+      /* Button Styling */
+      .btn {
+        background: #4c6ca0;
+        color: #ffffff;
+        border: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px; /* rounded corner*/
+        cursor: pointer;
+      }
+      .btn:hover {
+        color: #f4f4f4;
+        background: #446190;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <a class="btn" href="#">My Link</a>
+    <br />
+    <br />
+    <button class="btn">My Button</button>
+  </body>
+</html>
