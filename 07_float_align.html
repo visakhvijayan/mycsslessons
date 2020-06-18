@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Float & Align</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+      .clr {
+        /* for clearing the float */
+        clear: both;
+      }
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         line-height: 1.6em;
@@ -15,6 +22,29 @@
         margin: 30px auto; /* Top/Bottom and Right/Left */
       }
       .box {
+        background-color: #f4f4f4;
+        border: 1px solid #333333;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .box p {
+        /*Text Align*/
+        text-align: justify; /* making each line except tha last same length*/
+      }
+      #box-2 p {
+        color: red;
+      }
+      #box-3 p {
+        color: green;
+      }
+      #box-3 {
+        float: left;
+        width: 68%;
+      }
+      #box-2 {
+        float: right;
+        width: 30%;
       }
     </style>
   </head>
@@ -37,14 +67,35 @@
         <h3>India 2</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum
-          aliquid ea adipisci iste hic animi
+          aliquid ea adipisci iste hic animi Unde dignissimos labore cum. Ea
+          voluptates illum ut velit ipsum co
         </p>
       </div>
       <div id="box-3" class="box">
         <h3>India 3</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum
-          aliquid ea adipisci iste hic animi accusa
+          aliquid ea adipisci iste hic animi accusa Unde dignissimos labore cum.
+          Ea voluptates illum ut velit ipsum corrupti. A animi corrupti magnam
+          amet itaque blanditiis aut. Voluptatum, ab. Amet? Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Libero in ut eius asperiores
+          maiores nihil quae dolorum laudantium quos omnis reprehenderit cum
+          iusto, consectetur ratione, repellat ab, numquam harum impedit. iusto,
+          consectetur ratione, repellat ab, numquam harum impedit.
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">
+        <h3>India 4</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum
+          aliquid ea adipisci iste hic animi accusa Unde dignissimos labore cum.
+          Ea voluptates illum ut velit ipsum corrupti. A animi corrupti magnam
+          amet itaque blanditiis aut. Voluptatum, ab. Amet? Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Libero in ut eius asperiores
+          maiores nihil quae dolorum laudantium quos omnis reprehenderit cum
+          iusto, consectetur ratione, repellat ab, numquam harum impedit. iusto,
+          consectetur ratione, repellat ab, numquam harum impedit.
         </p>
       </div>
     </div>
