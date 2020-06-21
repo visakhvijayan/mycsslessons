@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inine & Block styling</title>
+    <style>
+        li{
+            display: inline;
+        }
+        li a {
+            padding:15px 20px;
+        }
+        img{
+            display: block;
+            margin: auto; /* display should be in block then only margin auto will work, ie it won't go center, if one more pic added without it it will go side by side. But now it will go down*/
+        }
+        .box{
+            background: #f4f4f4;
+            box-sizing: border-box;
+            padding: 20px;
+            width: 32.8%;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashipn</a></li>
+        <li><a href="#">Science</a></li>
+    </ul>
+    <br><br>
+    <img src="./img/leaf2.png" alt="My image">
+    <br><br>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis vel amet possimus at, quis perferendis voluptas unde nihil ea, assumenda sapiente soluta sequi blanditiis consectetur quam tenetur illo itaque!</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis vel amet possimus at, quis perferendis voluptas unde nihil ea, assumenda sapiente soluta sequi blanditiis consectetur quam tenetur illo itaque!</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis vel amet possimus at, quis perferendis voluptas unde nihil ea, assumenda sapiente soluta sequi blanditiis consectetur quam tenetur illo itaque!</p>
+    </div>
+
+</body>
+</html>
