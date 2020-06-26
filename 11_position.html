@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        /*
+        Static : default , Not affected by tblr (top, bottom, left, right) properties values
+
+        Relative : tblr values cause element to be moved from its normal position
+
+        Absolute : Positioned relative to its parent element that is positioned "relative"
+
+        Fixed : Position relative to the viewport
+
+        Sticky: Postion based onscroll position
+        */
+        body{
+            height:4000px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .container{
+            position:relative;
+            background: black;
+            width:500px;
+            height:500px;
+        }
+        #box-1{
+            position: relative;
+            top:50px;
+            left:50px;
+            background: red;
+            z-index: 1; /*To bring front*/
+        }
+        #box-2{
+            position:absolute; /*Take the properties from relative parent which is container*/
+            top: 100px;
+            left: 100px;
+            background: yellow;
+        }
+        #box-3{
+            position: absolute;
+            bottom: 100px;
+            right:100px;
+            background: green;
+        }
+        #box-4{
+            position: fixed; /* usually used for ads */
+            background: blue;
+        }
+        #box-5{
+            position: sticky;/*Usually used for menu items */
+            top: 0;
+            background: orange;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+</body>
+</html>
